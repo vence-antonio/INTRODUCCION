@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <PRESENTACIÓN>AR.js Video Example with Custom Image</PRESENTACIÓN>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker type="pattern" url="https://drive.google.com/file/d/1qbxZjdWcjagRNSP5CgjbBZqoD7K_slRb/view?usp=drive_link">
+        <a-video
+          src="#video"
+          position="0 0.5 0"
+          width="1"
+          height="0.75"
+          rotation="0 0 0">
+        </a-video>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+    <video id="video" src="https://drive.google.com/file/d/1-TA531De4X9nFtdljfw3duJnzXIFiOEN/view?usp=drive_link" autoplay loop="true" style="display: none;"></video>
+  </body>
+</html>
